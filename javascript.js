@@ -1,3 +1,6 @@
+let humanScore = 0
+let computerScore = 0
+
 function getComputerChoice() {
     //use math.random to randomly return either rock, paper or scissors
     //use console.log to test that the function returns rock, paper or scissors
@@ -7,15 +10,6 @@ function getHumanChoice() {
     //use prompt method to get user input so that the player can return rock, paper or scissors depending on what the user inputs
     //Test what your function returns by using console.log.
 }
-
-
-/*
-Step 4: Declare the players score variables
-Your game will keep track of the players score. You will write variables to keep track of the players score.
-
-Create two new variables named humanScore and computerScore in the global scope.
-Initialize those variables with the value of 0.
-*/
 
 
 /*
