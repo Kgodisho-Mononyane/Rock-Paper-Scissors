@@ -13,8 +13,8 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    //use prompt method to get user input so that the player can return rock, paper or scissors depending on what the user inputs
-    //Test what your function returns by using console.log.
+    let userInput = prompt("Rock, Paper or Scissors: ")
+    return userInput;
 }
 
 
