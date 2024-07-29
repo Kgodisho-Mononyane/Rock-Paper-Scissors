@@ -13,10 +13,10 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let userInput = prompt("Rock, Paper or Scissors: ")
+    let userInput = windows.prompt("Rock, Paper or Scissors: ")
     return userInput;
 }
-
+console.log(getComputerChoice())
 
 /*
 Step 5: Write the logic to play a single round
@@ -28,16 +28,6 @@ choices as arguments.
 Make your function’s humanChoice parameter case-insensitive so that players can input “rock”, “ROCK”, “RocK”, or other variations.
 Write the code for your playRound function to console.log a string value representing the round winner, such as: “You lose! Paper beats Rock”.
 Increment the humanScore or computerScore variable based on the round winner.
-Example code:
-
-function playRound(humanChoice, computerChoice) {
-  // your code here!
-}
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
 */
 function playRound(humanChoice, computerChoice) {
 
