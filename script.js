@@ -1,3 +1,6 @@
+let humanScore = 0
+let computerScore = 0
+
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random()* 3)
     if (computerChoice == 0) {
@@ -19,15 +22,7 @@ function getHumanChoice() {
     }*/
    return userInputLower;
 }
-console.log(getHumanChoice())
 
-
-/*Step 4: Declare the players score variables
-Your game will keep track of the players score. You will write variables to keep track of the players score.
-
-Create two new variables named humanScore and computerScore in the global scope.
-Initialize those variables with the value of 0.
-*/
 
 /*Step 5: Write the logic to play a single round
 Your game will be played round by round. You will write a function that takes the human and computer player choices as arguments, plays a single round, increments the round winner’s score and logs a winner announcement.
