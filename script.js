@@ -1,5 +1,3 @@
-
-
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random()* 3)
     if (computerChoice == 0) {
@@ -10,15 +8,18 @@ function getComputerChoice() {
         return "scissors"
     }
 }
-console.log(getComputerChoice())
 
-/*Step 3: Write the logic to get the human choice
-Your game will be played by a human player. You will write a function that takes the user choice and returns it.
-
-Create a new function named getHumanChoice.
-Write the code so that getHumanChoice will return one of the valid choices depending on what the user inputs.
-Hint: Use the prompt method to get the user’s input.
-Test what your function returns by using console.log.*/
+function getHumanChoice() {
+    let userInput = prompt("Rock, Paper, Scissors: ")
+    let userInputLower = userInput.toLowerCase()
+    /*if ((userInputLower != "rock")|| (userInputLower != "paper") || (userInputLower != "scissors") ) {
+        return "Invalid Input"
+    } else {
+        return userInputLower;
+    }*/
+   return userInputLower;
+}
+console.log(getHumanChoice())
 
 
 /*Step 4: Declare the players score variables
