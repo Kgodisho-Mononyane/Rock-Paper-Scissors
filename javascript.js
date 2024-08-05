@@ -1,3 +1,4 @@
+/*
 let humanScore = 0
 let computerScore = 0
 
@@ -13,10 +14,15 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    let userInput = windows.prompt("Rock, Paper or Scissors: ")
+    let userInput = prompt("Rock, Paper or Scissors: ")
     return userInput;
 }
-console.log(getComputerChoice())
+console.log(getHumanChoice())
+
+function getHumanChoice() {
+    let userInput = prompt("Rock, Paper or Scissors: ");
+    return userInput;
+}
 
 /*
 Step 5: Write the logic to play a single round
@@ -25,14 +31,24 @@ arguments, plays a single round, increments the round winner’s score and logs 
 
 Define two parameters for playRound: humanChoice and computerChoice. Use these two parameters to take the human and computer 
 choices as arguments.
-Make your function’s humanChoice parameter case-insensitive so that players can input “rock”, “ROCK”, “RocK”, or other variations.
+
 Write the code for your playRound function to console.log a string value representing the round winner, such as: “You lose! Paper beats Rock”.
 Increment the humanScore or computerScore variable based on the round winner.
-*/
+
 function playRound(humanChoice, computerChoice) {
+    /*If () {
+        return `You win! ${} beats ${}`
+        return humanScore++
 
+    }
+    if () {
+        return `You lose! ${} beats ${}`
+        return computerScore++
+    }
+    
 }
-
+const humanChoice = getHumanChoice() //Make humanChoice parameter case-insensitive so that players can input “rock”, “ROCK”, “RocK”
+const computerChoice = getComputerChoice()
 
 /*
 Your game will play 5 rounds. You will write a function named playGame that calls playRound to play 5 rounds, keeps track of 
@@ -44,8 +60,9 @@ the variable afterward will only provide the assigned value; it doesn’t recall
 functions to get new choices for each round.
 Re-work your previous functions or create more helper functions if necessary. Specifically, you may want to change the return 
 values to something more useful.
-If you already know about loops, you can use them. If not, don’t worry! Loops will be covered in the next lesson.*/
+If you already know about loops, you can use them. If not, don’t worry! Loops will be covered in the next lesson.
 
 function playGame() {
 
 }
+*/
