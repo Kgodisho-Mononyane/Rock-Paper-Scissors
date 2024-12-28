@@ -10,6 +10,8 @@ for this step)*/
 const rockBtn = document.querySelector("#rockBtn");
 const paperBtn = document.querySelector("#paperBtn");
 const scissorsBtn = document.querySelector("#scissorsBtn");
+const display = document.querySelector("#display");
+
 
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3);
@@ -34,17 +36,17 @@ function getHumanChoice() {
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
-        console.log(`It's a tie! You both played ${humanChoice}.`);
+        display.textContent = `It's a tie! You both played ${humanChoice}.`
     } else if (
         (humanChoice == "rock" && computerChoice == "scissors") ||
         (humanChoice == "paper" && computerChoice == "rock") ||
         (humanChoice == "scissors" && computerChoice == "paper")
     ) {
         humanScore++;
-        console.log(`You win! ${humanChoice} beats ${computerChoice}.`);
+        display.textContent = `You win! ${humanChoice} beats ${computerChoice}.`
     } else {
         computerScore++;
-        console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
+        display.textContent = `You lose! ${computerChoice} beats ${humanChoice}.`
     }
 }
 
