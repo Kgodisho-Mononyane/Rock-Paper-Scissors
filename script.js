@@ -6,9 +6,9 @@ let computerScore = 0
 your playRound function with the correct playerSelection 
 every time a button is clicked. (you can keep the console.logs 
 for this step)*/
-const rockBtn = document.querySelector("#rockBtn");
-const paperBtn = document.querySelector("#paperBtn");
-const scissorsBtn = document.querySelector("#scissorsBtn");
+const rockBtn = document.querySelector(".rockBtn");
+const paperBtn = document.querySelector(".paperBtn");
+const scissorsBtn = document.querySelector(".scissorsBtn");
 const display = document.querySelector("#display");
 
 function getComputerChoice() {
