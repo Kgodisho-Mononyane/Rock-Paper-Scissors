@@ -2,8 +2,7 @@ let humanScore = 0
 let computerScore = 0
 
 
-/*Create three buttons, one for each selection. 
-Add an event listener to the buttons that call 
+/* Add an event listener to the buttons that call 
 your playRound function with the correct playerSelection 
 every time a button is clicked. (you can keep the console.logs 
 for this step)*/
@@ -11,7 +10,6 @@ const rockBtn = document.querySelector("#rockBtn");
 const paperBtn = document.querySelector("#paperBtn");
 const scissorsBtn = document.querySelector("#scissorsBtn");
 const display = document.querySelector("#display");
-
 
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3);
