@@ -1,3 +1,14 @@
 * {
-    /*background-color: yellow;*/
+    background-color: #ffea00;
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+#scores {
+    display: flex;
 }
