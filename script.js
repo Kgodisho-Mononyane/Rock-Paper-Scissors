@@ -1,6 +1,16 @@
 let humanScore = 0
 let computerScore = 0
 
+
+/*Create three buttons, one for each selection. 
+Add an event listener to the buttons that call 
+your playRound function with the correct playerSelection 
+every time a button is clicked. (you can keep the console.logs 
+for this step)*/
+const rockBtn = document.querySelector("#rockBtn");
+const paperBtn = document.querySelector("#paperBtn");
+const scissorsBtn = document.querySelector("#scissorsBtn");
+
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3);
     if (computerChoice == 0) {
@@ -38,6 +48,7 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+/*
 function playGame() {
     for (let i = 1; i <= 5; i++) {
         const humanChoice = getHumanChoice();
@@ -57,5 +68,5 @@ function playGame() {
         console.log("The game is a tie!");
     }
 }
-
+*/
 playGame();
