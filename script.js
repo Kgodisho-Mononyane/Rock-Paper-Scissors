@@ -2,6 +2,7 @@
 let humanScore = 0;
 let computerScore = 0;
 
+
 //QUERY SELECTORS
 const displayHeading = document.querySelector("#display-heading");
 const subHeading = document.querySelector("#sub-heading");
@@ -15,17 +16,18 @@ const scissorsBtn = document.querySelector("#scissors-btn");
 
 const resetBtn = document.querySelector("#reset-btn")
 
+
 //EVENT LISTENERS
 rockBtn.addEventListener("click", () => {
-
+    // playRound();
 });
 
 paperBtn.addEventListener("click", () => {
-
+    // playRound();
 });
 
 scissorsBtn.addEventListener("click", () => {
-
+    // playRound();
 });
 
 resetBtn.addEventListener("click", () => {
@@ -34,14 +36,18 @@ resetBtn.addEventListener("click", () => {
 
 
 //FUNCTiONS
+function getComputerChoice() {
+    let computerChoice = Math.floor(Math.random() * 3);
+    if (computerChoice == 0) {
+        return "rock";
+    } else if (computerChoice == 1) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+}
 
-
-
-/* Add an event listener to the buttons that call 
-your playRound function with the correct playerSelection 
-every time a button is clicked. (you can keep the console.logs 
-for this step)*/
-
+console.log(getComputerChoice())
 
 
 
