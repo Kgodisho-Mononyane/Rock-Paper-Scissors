@@ -1,7 +1,6 @@
 let humanScore = 0
 let computerScore = 0
 
-
 /* Add an event listener to the buttons that call 
 your playRound function with the correct playerSelection 
 every time a button is clicked. (you can keep the console.logs 

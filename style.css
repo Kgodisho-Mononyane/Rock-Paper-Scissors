@@ -47,9 +47,34 @@ main {
     background-color: #E5E7EB;
 }
 
+.action-btn:hover {
+    background-color: #c2c3c7;
+}
+
+.action-btn:active {
+    background-color:  #8f9094;
+}
+
 #reset-button-container {
     display: flex;
     justify-content: center;
+}
+
+#reset-btn {
+    /* margin: 10px; */
+    border: none;
+    border-radius: 15%;
+    background-color:  #1F2937;
+    color: white;
+    height: 30px
+}
+
+#reset-btn:hover {
+    background-color:  #30435f;
+}
+
+#reset-btn:active {
+    background-color:  #405980;
 }
 
 
