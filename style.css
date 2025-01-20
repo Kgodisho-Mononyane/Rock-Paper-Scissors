@@ -1,6 +1,8 @@
 /* ALL */
 body {
-    margin: 0;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 /* HEADER */
 header {
@@ -13,16 +15,27 @@ header {
 
 .title {
     color: white;
+    /* change font size to 50px and adjust other elements accordingly */
 }
 
 
 /* MAIN */
+main {
+    min-height:100%;
+    position:relative;
+    padding-bottom: 60px;
+}
 
 #heading-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 
+}
+
+#display-heading, #sub-heading {
+    color:  #1F2937;
 }
 
 #score-container {
@@ -86,6 +99,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 70px;
 }
 
 .copyright, .github {
