@@ -34,7 +34,7 @@ scissorsBtn.addEventListener("click", () => {
 });
 
 resetBtn.addEventListener("click", () => {
-    //clear out all the progress that has been made
+    restartGame();
 });
 
 
@@ -75,7 +75,10 @@ function playGame() {
 }
 
 function restartGame() {
-
+    humanScore = 0;
+    computerScore = 0;
+    displayHeading.textContent = "Choose your weapon";
+    subHeading.textContent = "First to 5 wins!"
 }
 
 playGame();
