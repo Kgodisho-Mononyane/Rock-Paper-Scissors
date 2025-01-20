@@ -7,37 +7,46 @@
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    <div id="header-container">
-            <H1 class="heading">Rock</H1>
-            <H1 class="heading">Paper</H1>
-            <H1 class="heading">Scissors</H1>
-    </div>
+    <header id="header">
+        <h1 class="title">Rock Paper Scissors</h1>
+    </header>
 
-        <div id="results">
-            <div id="scores">
-                <div class="player-score">0</div>
-                <div class="dash">-</div>
-                <div class="computer-score">0</div>
+    
+    <main>
+        <div id="heading-container">
+            <h1 id="display-heading">Choose your weapon</h1>
+            <h2 id="sub-heading">First to 5 wins!</h2>
+        </div>
+
+        <div id="score-container">
+            <div class="player-score-container">
+                <h3 id="player-score">0</h3>
+                <h3 id="player-heading">Player:</h3>
             </div>
-            <div id="display"></div>
+            <div class="computer-score-container">
+                <h3 id="computer-score">0</h3>
+                <h3 id="computer-heading">Computer:</h2>
+            </div>
         </div>
         
-    </div>
-    
-    <div id="button-container">
-        <button class="rockBtn">Rock</button>
-        <button class="paperBtn">Paper</button>
-        <button class="scissorsBtn">Scissors</button>
-    </div>
+        <div id="button-container">
+            <button class="action-btn" id="rock-btn">✊</button>
+            <button class="action-btn" id="paper-btn">✋</button>
+            <button class="action-btn" id="scissors-btn">✌️</button>
+        </div>
 
-    <div id="footer-container">
-        <button class="rematchBtn">Rematch<button>
-    </div>
+        <div id="reset-button-container">
+            <button id="reset-btn">Play Again!</button>
+        </div>
+    </main>
     
-
     
+    <footer id="footer">
+        <p class="copyright">Copyright © (year) Kgodisho Mononyane</p>
+        <a href="https://github.com/Kgodisho-Mononyane/Rock-Paper-Scissors">Github</a>
+    </footer>
     
-    <script src="javascript.js"></script>
+   <script src="javascript.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
