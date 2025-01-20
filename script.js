@@ -19,19 +19,22 @@ const resetBtn = document.querySelector("#reset-btn")
 
 //EVENT LISTENERS
 rockBtn.addEventListener("click", () => {
-    // playRound();
+    let humanChoice = "rock";
+    playRound("rock");
 });
 
 paperBtn.addEventListener("click", () => {
-    // playRound();
+    let humanChoice = "rock";
+    playRound("paper");
 });
 
 scissorsBtn.addEventListener("click", () => {
-    // playRound();
+    let humanChoice = "rock";
+    playRound("scissors");
 });
 
 resetBtn.addEventListener("click", () => {
-
+    //clear out all the progress that has been made
 });
 
 
@@ -45,32 +48,14 @@ function getComputerChoice() {
     } else {
         return "scissors";
     }
+};
+
+
+function playRound(humanChoice, computerChoice) {
 }
 
-console.log(getComputerChoice())
 
 
-
-// function getComputerChoice() {
-//     let computerChoice = Math.floor(Math.random() * 3);
-//     if (computerChoice == 0) {
-//         return "rock";
-//     } else if (computerChoice == 1) {
-//         return "paper";
-//     } else {
-//         return "scissors";
-//     }
-// }
-
-// function getHumanChoice() {
-//     let userInput = prompt("Rock, Paper, Scissors: ");
-//     let userInputLower = userInput.toLowerCase();
-//     while (userInputLower !== "rock" && userInputLower !== "paper" && userInputLower !== "scissors") {
-//         userInput = prompt("Invalid input. Please enter Rock, Paper, or Scissors: ");
-//         userInputLower = userInput.toLowerCase();
-//     }
-//     return userInputLower;
-// }
 
 // function playRound(humanChoice, computerChoice) {
 //     if (humanChoice == computerChoice) {
@@ -109,8 +94,9 @@ function playGame() {
     }
 }
 */
+
+// function restartGame() {
+// }
 // playGame();
 
-
-//Current year
 
