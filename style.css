@@ -1,0 +1,30 @@
+/* ALL */
+body {
+    margin: 0;
+}
+/* HEADER */
+header {
+
+}
+
+.title {
+
+}
+
+
+/* MAIN */
+main {
+
+}
+
+#heading-container {
+
+}
+
+#score-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* FOOTER */
