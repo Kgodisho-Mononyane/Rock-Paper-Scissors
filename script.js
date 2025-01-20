@@ -1,14 +1,32 @@
-// let humanScore = 0
-// let computerScore = 0
+//VARIABLES
+let humanScore = 0;
+let computerScore = 0;
+
+//QUERY SELECTORS
+const displayHeading = document.querySelector("#display-heading");
+const subHeading = document.querySelector("#sub-heading");
+
+const playerScoreDisplay = document.querySelector("#player-score");
+const computerScoreDisplay = document.querySelector("#computer-score");
+
+const rockBtn = document.querySelector("#rock-btn");
+const paperBtn = document.querySelector("#paper-btn");
+const scissorsBtn = document.querySelector("#scissors-btn");
+
+const resetBtn = document.querySelector("#reset-btn")
+
+//FUNCTiONS
+
+
+
+
+
 
 /* Add an event listener to the buttons that call 
 your playRound function with the correct playerSelection 
 every time a button is clicked. (you can keep the console.logs 
 for this step)*/
-// const rockBtn = document.querySelector(".rockBtn");
-// const paperBtn = document.querySelector(".paperBtn");
-// const scissorsBtn = document.querySelector(".scissorsBtn");
-// const display = document.querySelector("#display");
+
 
 
 
