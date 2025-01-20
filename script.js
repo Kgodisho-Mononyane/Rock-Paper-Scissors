@@ -52,26 +52,38 @@ function getComputerChoice() {
 
 
 function playRound(humanChoice, computerChoice) {
+    if (humanChoice == computerChoice) {
+        displayHeading.textContent = "Its a tie!",
+        subHeading.textContent = `you both played ${humanChoice}`
+    } else if (
+        (humanChoice == "rock" && computerChoice == "scissors") ||
+        (humanChoice == "paper" && computerChoice == "rock") ||
+        (humanChoice == "scissors" && computerChoice == "paper")
+    ) {
+        humanScore++
+        displayHeading.textContent = `You win!`,
+        subHeading.textContent = `${humanChoice} beats ${computerChoice}`
+    } else {
+        computerScore++
+        displayHeading.textContent = `You lose!`,
+        subHeading.textContent = `${computerChoice} beats ${humanChoice}`
+    }
 }
 
+function playGame() {
+
+}
+
+function restartGame() {
+
+}
+
+playGame();
 
 
 
-// function playRound(humanChoice, computerChoice) {
-//     if (humanChoice == computerChoice) {
-//         display.textContent = `It's a tie! You both played ${humanChoice}.`
-//     } else if (
-//         (humanChoice == "rock" && computerChoice == "scissors") ||
-//         (humanChoice == "paper" && computerChoice == "rock") ||
-//         (humanChoice == "scissors" && computerChoice == "paper")
-//     ) {
-//         humanScore++;
-//         display.textContent = `You win! ${humanChoice} beats ${computerChoice}.`
-//     } else {
-//         computerScore++;
-//         display.textContent = `You lose! ${computerChoice} beats ${humanChoice}.`
-//     }
-// }
+
+
 
 /*
 function playGame() {
@@ -95,8 +107,5 @@ function playGame() {
 }
 */
 
-// function restartGame() {
-// }
-// playGame();
 
 
