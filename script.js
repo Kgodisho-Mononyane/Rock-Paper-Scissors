@@ -1,51 +1,53 @@
-let humanScore = 0
-let computerScore = 0
+// let humanScore = 0
+// let computerScore = 0
 
 /* Add an event listener to the buttons that call 
 your playRound function with the correct playerSelection 
 every time a button is clicked. (you can keep the console.logs 
 for this step)*/
-const rockBtn = document.querySelector(".rockBtn");
-const paperBtn = document.querySelector(".paperBtn");
-const scissorsBtn = document.querySelector(".scissorsBtn");
-const display = document.querySelector("#display");
+// const rockBtn = document.querySelector(".rockBtn");
+// const paperBtn = document.querySelector(".paperBtn");
+// const scissorsBtn = document.querySelector(".scissorsBtn");
+// const display = document.querySelector("#display");
 
-function getComputerChoice() {
-    let computerChoice = Math.floor(Math.random() * 3);
-    if (computerChoice == 0) {
-        return "rock";
-    } else if (computerChoice == 1) {
-        return "paper";
-    } else {
-        return "scissors";
-    }
-}
 
-function getHumanChoice() {
-    let userInput = prompt("Rock, Paper, Scissors: ");
-    let userInputLower = userInput.toLowerCase();
-    while (userInputLower !== "rock" && userInputLower !== "paper" && userInputLower !== "scissors") {
-        userInput = prompt("Invalid input. Please enter Rock, Paper, or Scissors: ");
-        userInputLower = userInput.toLowerCase();
-    }
-    return userInputLower;
-}
 
-function playRound(humanChoice, computerChoice) {
-    if (humanChoice == computerChoice) {
-        display.textContent = `It's a tie! You both played ${humanChoice}.`
-    } else if (
-        (humanChoice == "rock" && computerChoice == "scissors") ||
-        (humanChoice == "paper" && computerChoice == "rock") ||
-        (humanChoice == "scissors" && computerChoice == "paper")
-    ) {
-        humanScore++;
-        display.textContent = `You win! ${humanChoice} beats ${computerChoice}.`
-    } else {
-        computerScore++;
-        display.textContent = `You lose! ${computerChoice} beats ${humanChoice}.`
-    }
-}
+// function getComputerChoice() {
+//     let computerChoice = Math.floor(Math.random() * 3);
+//     if (computerChoice == 0) {
+//         return "rock";
+//     } else if (computerChoice == 1) {
+//         return "paper";
+//     } else {
+//         return "scissors";
+//     }
+// }
+
+// function getHumanChoice() {
+//     let userInput = prompt("Rock, Paper, Scissors: ");
+//     let userInputLower = userInput.toLowerCase();
+//     while (userInputLower !== "rock" && userInputLower !== "paper" && userInputLower !== "scissors") {
+//         userInput = prompt("Invalid input. Please enter Rock, Paper, or Scissors: ");
+//         userInputLower = userInput.toLowerCase();
+//     }
+//     return userInputLower;
+// }
+
+// function playRound(humanChoice, computerChoice) {
+//     if (humanChoice == computerChoice) {
+//         display.textContent = `It's a tie! You both played ${humanChoice}.`
+//     } else if (
+//         (humanChoice == "rock" && computerChoice == "scissors") ||
+//         (humanChoice == "paper" && computerChoice == "rock") ||
+//         (humanChoice == "scissors" && computerChoice == "paper")
+//     ) {
+//         humanScore++;
+//         display.textContent = `You win! ${humanChoice} beats ${computerChoice}.`
+//     } else {
+//         computerScore++;
+//         display.textContent = `You lose! ${computerChoice} beats ${humanChoice}.`
+//     }
+// }
 
 /*
 function playGame() {
@@ -68,4 +70,8 @@ function playGame() {
     }
 }
 */
-playGame();
+// playGame();
+
+
+//Current year
+
