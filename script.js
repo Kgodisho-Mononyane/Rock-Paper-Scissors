@@ -15,10 +15,25 @@ const scissorsBtn = document.querySelector("#scissors-btn");
 
 const resetBtn = document.querySelector("#reset-btn")
 
+//EVENT LISTENERS
+rockBtn.addEventListener("click", () => {
+
+});
+
+paperBtn.addEventListener("click", () => {
+
+});
+
+scissorsBtn.addEventListener("click", () => {
+
+});
+
+resetBtn.addEventListener("click", () => {
+
+});
+
+
 //FUNCTiONS
-
-
-
 
 
 
