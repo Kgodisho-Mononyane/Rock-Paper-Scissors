@@ -37,6 +37,16 @@ main {
     justify-content: center;
 }
 
+.action-btn {
+    height: 200px;
+    width: 200px;
+    font-size: 70px;
+    border: none;
+    margin: 10px;
+    border-radius: 15%;
+    background-color: #E5E7EB;
+}
+
 #reset-button-container {
     display: flex;
     justify-content: center;
