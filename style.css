@@ -7,24 +7,37 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1F2937;
 
 }
 
 .title {
-
+    color: white;
 }
 
 
 /* MAIN */
 main {
-
 }
 
 #heading-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
 #score-container {
+    display: flex;
+    justify-content: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#reset-button-container {
     display: flex;
     justify-content: center;
 }
@@ -35,8 +48,12 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: green;
+    background-color: #1F2937;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.copyright, .github {
+    color:white;
 }
