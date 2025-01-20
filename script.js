@@ -19,7 +19,7 @@ const resetBtn = document.querySelector("#reset-btn")
 
 //EVENT LISTENERS
 rockBtn.addEventListener("click", () => {
-    let humanChoice = "rock";
+    //let humanChoice = "rock";
     playRound("rock");
 });
 
@@ -40,10 +40,10 @@ resetBtn.addEventListener("click", () => {
 
 //FUNCTiONS
 function getComputerChoice() {
-    let computerChoice = Math.floor(Math.random() * 3);
-    if (computerChoice == 0) {
+    let computerChoiceRand = Math.floor(Math.random() * 3);
+    if (computerChoiceRand == 0) {
         return "rock";
-    } else if (computerChoice == 1) {
+    } else if (computerChoiceRand == 1) {
         return "paper";
     } else {
         return "scissors";
@@ -71,7 +71,10 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
-
+    for (let i = 1; i <= 5; i++ ) {
+        //const humanChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
+    }
 }
 
 function restartGame() {
@@ -90,8 +93,7 @@ playGame();
 
 /*
 function playGame() {
-    for (let i = 1; i <= 5; i++) {
-        const humanChoice = getHumanChoice();
+    for (let i = 1; i <= 5; i++) {  
         const computerChoice = getComputerChoice();
         playRound(humanChoice, computerChoice);
         console.log(`Round ${i}: Human Score - ${humanScore}, Computer Score - ${computerScore}`);
