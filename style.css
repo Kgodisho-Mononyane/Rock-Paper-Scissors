@@ -17,8 +17,6 @@ header {
 
 
 /* MAIN */
-main {
-}
 
 #heading-container {
     display: flex;
@@ -79,13 +77,14 @@ main {
 
 
 /* FOOTER */
-footer {
+#footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #1F2937;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
