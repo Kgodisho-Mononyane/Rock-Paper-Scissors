@@ -2,7 +2,6 @@
 let humanScore = 0;
 let computerScore = 0;
 
-
 //QUERY SELECTORS
 const displayHeading = document.querySelector("#display-heading");
 const subHeading = document.querySelector("#sub-heading");
@@ -21,21 +20,23 @@ computerScoreDisplay.textContent = computerScore;
 
 //EVENT LISTENERS
 rockBtn.addEventListener("click", () => {
-    playRound("rock");
+    const computerChoice = getComputerChoice();
+    playRound("rock", computerChoice);
 });
 
 paperBtn.addEventListener("click", () => {
-    playRound("paper");
+    const computerChoice = getComputerChoice();
+    playRound("paper", computerChoice);
 });
 
 scissorsBtn.addEventListener("click", () => {
-    playRound("scissors");
+    const computerChoice = getComputerChoice();
+    playRound("scissors", computerChoice);
 });
 
 resetBtn.addEventListener("click", () => {
     restartGame();
 });
-
 
 //FUNCTiONS
 function getComputerChoice() {
@@ -48,7 +49,6 @@ function getComputerChoice() {
         return "scissors";
     }
 };
-
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
