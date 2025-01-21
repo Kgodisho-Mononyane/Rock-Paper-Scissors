@@ -23,7 +23,8 @@ header {
 main {
     min-height:100%;
     position:relative;
-    padding-bottom: 60px;
+    /* padding-top: 0px; */
+    padding-bottom: 10px;
 }
 
 #heading-container {
@@ -41,6 +42,11 @@ main {
 #score-container {
     display: flex;
     justify-content: center;
+}
+
+.player-score-container, .computer-score-container {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #button-container {
@@ -91,7 +97,7 @@ main {
 
 /* FOOTER */
 #footer {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     width: 100%;
     background-color: #1F2937;

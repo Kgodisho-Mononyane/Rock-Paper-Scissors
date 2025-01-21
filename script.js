@@ -16,6 +16,8 @@ const scissorsBtn = document.querySelector("#scissors-btn");
 
 const resetBtn = document.querySelector("#reset-btn")
 
+playerScoreDisplay.textContent = humanScore;
+computerScoreDisplay.textContent = computerScore;
 
 //EVENT LISTENERS
 rockBtn.addEventListener("click", () => {
