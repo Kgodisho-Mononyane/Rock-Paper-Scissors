@@ -39,6 +39,16 @@ main {
     color:  #1F2937;
 }
 
+#display-heading {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#sub-heading {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 #score-container {
     display: flex;
     justify-content: center;

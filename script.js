@@ -16,7 +16,6 @@ const scissorsBtn = document.querySelector("#scissors-btn");
 const resetBtn = document.querySelector("#reset-btn")
 
 
-
 //EVENT LISTENERS
 rockBtn.addEventListener("click", () => {
     const computerChoice = getComputerChoice();
@@ -74,7 +73,7 @@ function playRound(humanChoice, computerChoice) {
 function playGame() {
     restartGame();
     while (humanScore < 5 && computerScore < 5) {
-    playRound(humanChoice, computerChoice);
+    playRound(humanChoice, getComputerChoiceChoice());
    }
 
     if (humanScore === 5) {
