@@ -19,17 +19,14 @@ const resetBtn = document.querySelector("#reset-btn")
 
 //EVENT LISTENERS
 rockBtn.addEventListener("click", () => {
-    //let humanChoice = "rock";
     playRound("rock");
 });
 
 paperBtn.addEventListener("click", () => {
-    let humanChoice = "rock";
     playRound("paper");
 });
 
 scissorsBtn.addEventListener("click", () => {
-    let humanChoice = "rock";
     playRound("scissors");
 });
 
@@ -67,8 +64,8 @@ function playRound(humanChoice, computerChoice) {
         computerScore++
         displayHeading.textContent = `You lose!`,
         subHeading.textContent = `${computerChoice} beats ${humanChoice}`
-    }
-}
+    };
+};
 
 function playGame() {
     for (let i = 1; i <= 5; i++ ) {
@@ -77,28 +74,25 @@ function playGame() {
         playRound(humanChoice, computerChoice);
     }
 
-    if (humanScore > computerScore) {
-        alert("You win the game!");
-        console.log("You win the game!");
-    } else if (computerScore > humanScore) {
-        alert("You lose the game!");
-        console.log("You lose the game!");
+    if (humanScore == 5) {
+        //"You are the winner"
+        //"you won x to x"
     } else {
-        alert("The game is a tie!");
-        console.log("The game is a tie!");
-    }
-}
-
-/*
-function playGame() {
-    for (let i = 1; i <= 5; i++) {  
-        
-        console.log(`Round ${i}: Human Score - ${humanScore}, Computer Score - ${computerScore}`);
+        //"You are the loser"
+        //you lost x to x
     }
 
-    
+    // if (humanScore > computerScore) {
+    //     alert("You win the game!");
+    //     console.log("You win the game!");
+    // } else if (computerScore > humanScore) {
+    //     alert("You lose the game!");
+    //     console.log("You lose the game!");
+    // } else {
+    //     alert("The game is a tie!");
+    //     console.log("The game is a tie!");
+    // }
 }
-*/
 
 function restartGame() {
     humanScore = 0;
