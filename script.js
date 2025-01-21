@@ -77,7 +77,7 @@ function playGame() {
     if (humanScore == 5) {
         //"You are the winner"
         //"you won x to x"
-    } else {
+    } else if (computerScore == 5) {
         //"You are the loser"
         //you lost x to x
     }
