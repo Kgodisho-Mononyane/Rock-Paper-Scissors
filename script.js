@@ -74,29 +74,7 @@ function playGame() {
     for (let i = 1; i <= 5; i++ ) {
         //const humanChoice = getHumanChoice();
         const computerChoice = getComputerChoice();
-    }
-}
-
-function restartGame() {
-    humanScore = 0;
-    computerScore = 0;
-    displayHeading.textContent = "Choose your weapon";
-    subHeading.textContent = "First to 5 wins!"
-}
-
-playGame();
-
-
-
-
-
-
-/*
-function playGame() {
-    for (let i = 1; i <= 5; i++) {  
-        const computerChoice = getComputerChoice();
         playRound(humanChoice, computerChoice);
-        console.log(`Round ${i}: Human Score - ${humanScore}, Computer Score - ${computerScore}`);
     }
 
     if (humanScore > computerScore) {
@@ -110,7 +88,26 @@ function playGame() {
         console.log("The game is a tie!");
     }
 }
+
+/*
+function playGame() {
+    for (let i = 1; i <= 5; i++) {  
+        
+        console.log(`Round ${i}: Human Score - ${humanScore}, Computer Score - ${computerScore}`);
+    }
+
+    
+}
 */
 
+function restartGame() {
+    humanScore = 0;
+    computerScore = 0;
+    playerScoreDisplay.textContent = 0
+    computerScoreDisplay.textContent = 0
+    displayHeading.textContent = "Choose your weapon";
+    subHeading.textContent = "First to 5 wins!"
+}
 
+playGame();
 
