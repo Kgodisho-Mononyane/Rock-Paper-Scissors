@@ -77,24 +77,15 @@ function playGame() {
     }
 
     if (humanScore == 5) {
-        //"You are the winner"
-        //"you won x to x"
+        displayHeading.textContent = "You are the winner"
+        subHeading.textContent = `You won ${humanScore} to ${computerScore}`
     } else if (computerScore == 5) {
-        //"You are the loser"
-        //you lost x to x
-    }
-
-    // if (humanScore > computerScore) {
-    //     alert("You win the game!");
-    //     console.log("You win the game!");
-    // } else if (computerScore > humanScore) {
-    //     alert("You lose the game!");
-    //     console.log("You lose the game!");
-    // } else {
-    //     alert("The game is a tie!");
-    //     console.log("The game is a tie!");
-    // }
-}
+        displayHeading.textContent = "You are the loser"
+        subHeading.textContent = `You lost ${computerScore} to ${humanScore}`
+    } else {
+        console.log(`${humanScore} - ${computerScore}`)
+    };
+};
 
 function restartGame() {
     humanScore = 0;
