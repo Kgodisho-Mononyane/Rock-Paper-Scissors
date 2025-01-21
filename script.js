@@ -15,8 +15,7 @@ const scissorsBtn = document.querySelector("#scissors-btn");
 
 const resetBtn = document.querySelector("#reset-btn")
 
-playerScoreDisplay.textContent = humanScore;
-computerScoreDisplay.textContent = computerScore;
+
 
 //EVENT LISTENERS
 rockBtn.addEventListener("click", () => {
@@ -67,19 +66,21 @@ function playRound(humanChoice, computerChoice) {
         displayHeading.textContent = `You lose!`,
         subHeading.textContent = `${computerChoice} beats ${humanChoice}`
     };
+
+    playerScoreDisplay.textContent = humanScore;
+    computerScoreDisplay.textContent = computerScore;
 };
 
 function playGame() {
-    for (let i = 1; i <= 5; i++ ) {
-        //const humanChoice = getHumanChoice();
-        const computerChoice = getComputerChoice();
-        playRound(humanChoice, computerChoice);
-    }
+    restartGame();
+    while (humanScore < 5 && computerScore < 5) {
+    playRound(humanChoice, computerChoice);
+   }
 
-    if (humanScore == 5) {
+    if (humanScore === 5) {
         displayHeading.textContent = "You are the winner"
         subHeading.textContent = `You won ${humanScore} to ${computerScore}`
-    } else if (computerScore == 5) {
+    } else if (computerScore === 5) {
         displayHeading.textContent = "You are the loser"
         subHeading.textContent = `You lost ${computerScore} to ${humanScore}`
     } else {
