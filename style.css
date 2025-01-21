@@ -15,7 +15,7 @@ header {
 
 .title {
     color: white;
-    /* change font size to 50px and adjust other elements accordingly */
+    font-size: 50px;
 }
 
 
@@ -120,4 +120,14 @@ main {
 
 .copyright, .github {
     color:white;
+}
+
+.copyright {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.github {
+    margin-top: 0;
+    padding-top: 0;
 }
