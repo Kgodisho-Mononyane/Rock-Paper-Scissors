@@ -131,3 +131,7 @@ main {
     margin-top: 0;
     padding-top: 0;
 }
+
+.github:hover {
+    color: yellow;
+}
