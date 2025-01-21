@@ -68,19 +68,20 @@ function playRound(humanChoice, computerChoice) {
 
     playerScoreDisplay.textContent = humanScore;
     computerScoreDisplay.textContent = computerScore;
+    declareWinner();
 };
 
 function playGame() {
     restartGame();
     while (humanScore <= 5 && computerScore <= 5) {
     playRound(humanChoice, getComputerChoiceChoice());
-    declareWinner();
+    declareWinner(playerScoreDisplay, computerScoreDisplay);
    }   
 };
 
-function declareWinner(humanScore, computerScore) {
+function declareWinner() {
     if (humanScore === 5) {
-        displayHeading.textContent = "You are the winner"
+        displayHeading.textContent = "You are the winner!"
         subHeading.textContent = `You won ${humanScore} to ${computerScore}`
     } else if (computerScore === 5) {
         displayHeading.textContent = "You are the loser"
@@ -95,6 +96,15 @@ function restartGame() {
     computerScoreDisplay.textContent = 0
     displayHeading.textContent = "Choose your weapon";
     subHeading.textContent = "First to 5 wins!"
+    rockBtn.disabled = false;
+    paperBtn.disabled = false;
+    scissorsBtn.disabled = false;
+}
+
+function disableButtons() {
+    rockBtn.disabled = true;
+    paperBtn.disabled = true;
+    scissorsBtn.disabled = true;
 }
 
 playGame();
