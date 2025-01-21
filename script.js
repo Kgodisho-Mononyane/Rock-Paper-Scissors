@@ -85,7 +85,7 @@ function declareWinner() {
         subHeading.textContent = `You won ${humanScore} to ${computerScore}`
         disableButtons();
     } else if (computerScore === 5) {
-        displayHeading.textContent = "You are the loser"
+        displayHeading.textContent = "You are the loser!"
         subHeading.textContent = `You lost ${computerScore} to ${humanScore}`
         disableButtons();
     }; 
