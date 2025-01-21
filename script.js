@@ -72,20 +72,21 @@ function playRound(humanChoice, computerChoice) {
 
 function playGame() {
     restartGame();
-    while (humanScore < 5 && computerScore < 5) {
+    while (humanScore <= 5 && computerScore <= 5) {
     playRound(humanChoice, getComputerChoiceChoice());
-   }
+    declareWinner();
+   }   
+};
 
+function declareWinner(humanScore, computerScore) {
     if (humanScore === 5) {
         displayHeading.textContent = "You are the winner"
         subHeading.textContent = `You won ${humanScore} to ${computerScore}`
     } else if (computerScore === 5) {
         displayHeading.textContent = "You are the loser"
         subHeading.textContent = `You lost ${computerScore} to ${humanScore}`
-    } else {
-        console.log(`${humanScore} - ${computerScore}`)
-    };
-};
+    }; 
+}
 
 function restartGame() {
     humanScore = 0;

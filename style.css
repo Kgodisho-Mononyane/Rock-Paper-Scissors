@@ -93,7 +93,7 @@ main {
     border-radius: 15%;
     background-color:  #1F2937;
     color: white;
-    height: 30px
+    height: 35px;
 }
 
 #reset-btn:hover {
